@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #F2F2F2;
+}
+
+.container {
+    max-width: 1225px;
+    margin: 0 auto;
+}
+
+
+/*----------------------*/
+
+.best-sellers {
+    margin-bottom: 105px;
+}
+
+.best-sellers .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.best-sellers__title {
+    display: inline;
+    font-size: 32px;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    margin-bottom: 40px
+}
+
+
+.best-sellers__title:before, .best-sellers__title:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: #D9D9D9;
+    width: 165px;
+    height: 2px;
+}
+
+.best-sellers__title:before {
+    left: 185px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.best-sellers__title:after {
+    right: 185px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.best-sellers__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 25px;
+}
+
+.best-sellers__item {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 17px;
+}
+
+.best-sellers__img {
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+
+}
+
+.best-sellers__img img {
+    border-radius: 5px;
+    transition: transform .3s ease-in;
+}
+
+.best-sellers__item:hover .best-sellers__img img {
+    transform: scale(1.2);
+}
+
+.best-sellers__item h5 {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+
+.best-sellers__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.best-sellers__price p {
+    font-size: 18px;
+    color: #838383;
+}
+
+.best-sellers__item button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #FF8F52;
+    display: flex;
+    align-items: center;
+    transition: transform .3s ease-in;
+    cursor: pointer;
+}
+
+.best-sellers__item button:hover {
+    transform: scale(1.07);
+}
+
+.best-sellers__item button:hover .best-sellers__icon {
+    transform: rotate(20deg);
+}
+
+.best-sellers__icon {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
