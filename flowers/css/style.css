@@ -1,0 +1,173 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1225px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.comments {
+  height: 450px;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.comments__title {
+  display: inline;
+  position: relative;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-top: 30px;
+  left: 500px;
+}
+
+.comments__title:before,
+.comments__title:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #d9d9d9;
+  width: 165px;
+  height: 2px;
+}
+
+.comments__title:before {
+  left: 185px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.comments__title:after {
+  right: 185px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.comments__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.comments__user-img {
+  width: 58px;
+  height: 58px;
+  margin: 20px 15px 0 28px;
+}
+
+.comments__user {
+  max-width: 382px;
+  max-height: 294px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  margin-right: 24px;
+  overflow: hidden;
+}
+
+.comments__user-name {
+  margin: 36px 0 12px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.comments__user-text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
+  margin-right: 10px;
+}
+
+.comments__user-ratings {
+  margin-bottom: 28px;
+}
+
+footer {
+  background-color: #454545;
+}
+
+.footer__logo-img {
+  padding: 55px 0 16px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__text {
+  max-width: 378px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #d9d9d9;
+  margin-bottom: 56px;
+}
+
+.footer__items {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__items {
+  margin-top: 2px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.footer__item {
+  margin-bottom: 5px;
+}
+
+.footer__item-link {
+  font-size: 18px;
+  line-height: 30px;
+  color: #d9d9d9;
+}
+
+.footer__contacts-title {
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+.footer__contacts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__contacts-img {
+  margin-right: 10px;
+}
+
+.footer__contacts-subscr {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 21px;
+  color: #d9d9d9;
+}
